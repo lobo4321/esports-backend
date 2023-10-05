@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "2548f60a-733d-4058-980d-68c3b57261da",
+		"name": "Experiences",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"id": "a2dac95f-7680-4015-901a-9196cdf1fc0a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/create-experience"
+			},
+			"response": []
+		},
+		{
+			"name": "Find",
+			"id": "5596150e-e216-4b3d-8735-f8ec92807d5b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/find-experiences"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"id": "a870beea-34eb-4efb-8a38-248d8f99382d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/delete-experience"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"id": "cc650adb-fbf2-4a19-9822-3cdc8d3289f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/update-experience"
+			},
+			"response": []
+		}
+	]
+}
