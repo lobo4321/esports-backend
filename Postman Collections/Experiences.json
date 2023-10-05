@@ -1,109 +1,221 @@
 {
 	"info": {
 		"_postman_id": "2548f60a-733d-4058-980d-68c3b57261da",
-		"name": "Experiences",
+		"name": "Bravos Service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Create",
-			"id": "a2dac95f-7680-4015-901a-9196cdf1fc0a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+			"name": "Experiences",
+			"item": [
+				{
+					"name": "Create",
+					"id": "a2dac95f-7680-4015-901a-9196cdf1fc0a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/create-experience"
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+				{
+					"name": "Find",
+					"id": "5596150e-e216-4b3d-8735-f8ec92807d5b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/find-experiences"
+					},
+					"response": []
 				},
-				"url": "{{baseUrl}}/create-experience"
-			},
-			"response": []
+				{
+					"name": "Delete",
+					"id": "a870beea-34eb-4efb-8a38-248d8f99382d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/delete-experience"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"id": "cc650adb-fbf2-4a19-9822-3cdc8d3289f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/update-experience"
+					},
+					"response": []
+				}
+			],
+			"id": "afa4e20b-5a9d-4d93-ab53-8cc547b20bbc"
 		},
 		{
-			"name": "Find",
-			"id": "5596150e-e216-4b3d-8735-f8ec92807d5b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create",
+					"id": "336c274b-84cd-4824-aff2-f1c4180087fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"bannerUrl\": \"teste\",\n    \"logoUrl\": \"teste\",\n    \"category\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/create-product"
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+				{
+					"name": "Find",
+					"id": "57b95e65-ede6-4c21-b826-aae801e01e08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/find-products"
+					},
+					"response": []
 				},
-				"url": "{{baseUrl}}/find-experiences"
-			},
-			"response": []
-		},
-		{
-			"name": "Delete",
-			"id": "a870beea-34eb-4efb-8a38-248d8f99382d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+				{
+					"name": "Delete",
+					"id": "436a3f22-ed0c-442e-b986-0068a13d4e1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/delete-product"
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": \"teste\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/delete-experience"
-			},
-			"response": []
-		},
-		{
-			"name": "Update",
-			"id": "cc650adb-fbf2-4a19-9822-3cdc8d3289f7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/update-experience"
-			},
-			"response": []
+				{
+					"name": "Update",
+					"id": "3e76e29c-b552-4ec5-8fe5-0727c9a50119",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/update-product"
+					},
+					"response": []
+				}
+			],
+			"id": "90756e44-2623-4865-b920-a038c007f114"
 		}
 	]
 }
