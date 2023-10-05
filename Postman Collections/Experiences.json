@@ -6,112 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Experiences",
-			"item": [
-				{
-					"name": "Create",
-					"id": "a2dac95f-7680-4015-901a-9196cdf1fc0a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/create-experience"
-					},
-					"response": []
-				},
-				{
-					"name": "Find",
-					"id": "5596150e-e216-4b3d-8735-f8ec92807d5b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/find-experiences"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"id": "a870beea-34eb-4efb-8a38-248d8f99382d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"id\": \"teste\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/delete-experience"
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"id": "cc650adb-fbf2-4a19-9822-3cdc8d3289f7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/update-experience"
-					},
-					"response": []
-				}
-			],
-			"id": "afa4e20b-5a9d-4d93-ab53-8cc547b20bbc"
-		},
-		{
 			"name": "Products",
 			"item": [
 				{
@@ -203,7 +97,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"bannerUrl\": \"teste\",\n    \"logoUrl\": \"teste\",\n    \"category\": \"teste\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -216,6 +110,112 @@
 				}
 			],
 			"id": "90756e44-2623-4865-b920-a038c007f114"
+		},
+		{
+			"name": "Experiences",
+			"item": [
+				{
+					"name": "Create",
+					"id": "21241c9e-214e-4d5f-88fd-2377e40405cf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/create-experience"
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"id": "4f5f5646-0fd0-40f6-a918-60d29928a00f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/find-experiences"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "6dd646bf-87d3-49a4-91a3-910fc4b0f464",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/delete-experience"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"id": "7630dae6-6c01-4ddc-abb9-9e6e25106113",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"teste\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"description\": \"test\",\n    \"imageUrl\": \"teste\",\n    \"expirationDate\": \"2023-10-04\",\n    \"eventDate\": \"2023-10-04\",\n    \"type\": \"teste\",\n    \"city\": \"teste\",\n    \"isAvailableToSell\": true,\n    \"price\": 10,\n    \"productId\": \"74e2268f-9bf5-4d01-9709-1d1447d91145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/update-experience"
+					},
+					"response": []
+				}
+			],
+			"id": "ac685097-d0b4-4696-8576-bc7cc1b2b348"
 		}
 	]
 }
